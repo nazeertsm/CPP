@@ -42,11 +42,13 @@ elements: specified the number of elements for the data
     cout<<&str_list<<endl;
     cout<<vector_ptr<<endl;
     cout<<"first string  "<<vector_ptr->at(0)<<endl;
+    cout<<"first string  "<<(*vector_ptr).at(0)<<endl;
 
     for(auto each_str: *vector_ptr){
 
         cout<<each_str<<" ";
     }
+    cout<<"\n--------------------------------"<<endl;
 
           
     return 0;
