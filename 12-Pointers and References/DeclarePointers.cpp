@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+#include<vector>
 
 int main(){
 
@@ -12,13 +13,17 @@ variable_type *pointername {nullptr};
 */
 int *int_ptr{};//output 0
 int *int_ptr1;   //0x401519x
+
 // if you dont initialize a pointer ti point a variable or function then you should initialize it to "nullptr" to make it "null"
 // implies pointer is pointing nowhere
+
 
 int *int_ptr2{nullptr}; //output 0
 double *double_ptr{nullptr};
 char *char_ptr{nullptr};
 string *String_ptr;
+unsigned long long *p3{nullptr};
+vector<string> *p4{nullptr};
 
 cout<<int_ptr<<endl;
 cout<<int_ptr1<<endl;
@@ -26,8 +31,7 @@ cout<<int_ptr2<<endl;
 cout<<"Hello"<<endl;
 cout<<char_ptr<<endl;
 
+
 return 0;
-
-
 
 }
