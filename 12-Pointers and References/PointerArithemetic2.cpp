@@ -9,12 +9,12 @@ int main()
     cout << score_ptr << endl;
     cout << score << endl;
 
-    while (*score_ptr != -1) //check the condition up to end of the value i.e -1
+    do
     {
 
         cout << *score_ptr << endl;
-        score_ptr++; //increent the pointer
-    }
+        score_ptr++; // increent the pointer
+    } while (*score_ptr != -1);
 
     return 0;
 }
