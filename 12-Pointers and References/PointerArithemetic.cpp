@@ -13,7 +13,10 @@ int main()
     {
 
         cout << *score_ptr << endl;
-        score_ptr++; //increent the pointer
+       // score_ptr++; //increent the pointer
+        *score_ptr++;   //
+
+
     }
 
     return 0;
