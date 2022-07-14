@@ -23,7 +23,7 @@ int main() {
 
   int arr[] = {3, 6, 7, 21, 9};
 
-    for (int x : arr)  // x takes the values from one by one;
+    for (int x : arr)  // x takes the values from one by one from arr;
         cout << x << endl;
 
   return 0;
