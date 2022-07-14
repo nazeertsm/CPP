@@ -10,3 +10,12 @@ In C, there are cases where we need to store multiple attributes of an entity. I
 
 Construct individual arrays for storing names, roll numbers, and marks.
 Use a special data structure to store the collection of different data types.
+
+
+
+
+
+
+//https://www.geeksforgeeks.org/c-program-to-store-information-of-students-using-structure/#:~:text=Write%20a%20C%20program%20to%20store%20the%20information,structure%20is%20a%20user-defined%20data%20type%20in%20C%2FC%2B%2B.
+//https://www.tutorialspoint.com/cplusplus-program-to-store-information-of-a-student-in-a-structure
+//https://www.geeksforgeeks.org/structures-in-cpp/
