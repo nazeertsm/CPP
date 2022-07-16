@@ -10,7 +10,7 @@ int x,y;
 
 int main(){
 
-    struct Point p1= {34, 45};
+    struct Point p1= {34, 45}; ////declare variable of type structure and initialize the values of x,y
 
     // p2 is a pointer to structure p1
     struct Point *p2{&p1};
