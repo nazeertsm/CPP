@@ -7,7 +7,7 @@ private:
 	int b;
 
 public:
-	friend void f1(); // friend function
+	friend void f1(Item); // friend function
 
 	void setData(int x, int y){
 		a=x;
@@ -23,9 +23,12 @@ public:
 };
 
 // friend function definition
-void f1()
+void f1(Item i)
 {
 	cout << "I am inside f1 function, i am not member of item class" << endl;
+//friend function f1 can access Item class member, but not directly, from main, f1 passing i1 object, 
+//friend function received object and accesing variables, friend function declaration also need to modify
+	cout << "sum is " <<i.a+i.b<<endl; 
 	
 }
 
@@ -41,7 +44,7 @@ int main()
 	i1.setData(10,20);
 	Hello i2;
 
-	f1();	 // calling f1 function, f1 is not a member of class Item, we can directly call
+	f1(i1);	 // calling f1 function, f1 is not a member of class Item, we can directly call
 	i2.f2(); // f2 is Hello class member, accessing using dot operator
 
 	return 0;
