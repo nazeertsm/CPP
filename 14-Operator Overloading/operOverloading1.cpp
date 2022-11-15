@@ -20,6 +20,15 @@ public:
 		res.imag = imag + obj.imag;
 		return res;
 	}
+
+	Complex operator - () {
+		Complex res;
+		res.real=-real;
+		res.imag=-imag;
+		
+		return res;
+	}
+
 	void showData() {
          cout << real << " + i" << imag << '\n'; 
     }
@@ -28,9 +37,13 @@ public:
 
 int main()
 {
-	Complex c1(10, 5), c2(2, 4);
+	Complex c1(10, 5), c2(2, 4), c4;
 	Complex c3 = c1 + c2;  
 	//c3= c1.operator+(c2)-c1 calling + operator as c2 argument and +(plus) returning to c3
 	//c1 and c2 should be complex type
 	c3.showData();
+	c4=-c3;
+	c4.showData();
+
+
 }

@@ -7,7 +7,7 @@ private:
 	int b;
 
 public:
-	friend void f1(); // friend function
+	friend void f1(); // friend function declaration
 
 	void setData(int x, int y){
 		a=x;
@@ -22,7 +22,7 @@ public:
 	void f2();
 };
 
-// friend function definition
+// friend function definition(friend function defined outside of the class)
 void f1()
 {
 	cout << "I am inside f1 function, i am not member of item class" << endl;
