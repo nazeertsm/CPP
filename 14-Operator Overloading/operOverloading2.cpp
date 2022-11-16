@@ -17,6 +17,7 @@ public:
 	{
 		cout << real << " + i" << imaginary;
 	}
+	//return type
 	ComplexNumber operator+(ComplexNumber c2)
 	{
 		ComplexNumber c3(0, 0);
