@@ -19,4 +19,5 @@ int main(){
     printf("%d\n", P2);
 
     return 0;
+	
 }
